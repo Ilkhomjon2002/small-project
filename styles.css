@@ -1,0 +1,317 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 95%;
+	margin: 0 0 0 auto;
+}
+ul {
+	list-style: none;
+}
+.body {
+	display: grid;
+	grid-template-columns: 80px 1fr;
+	background-image: url("https://cdn.pixabay.com/photo/2021/03/17/13/59/man-6102394_1280.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.menu {
+	color: white;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 100px auto 200px;
+}
+
+.menu nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.menu nav ul li {
+	width: 50%;
+}
+.nav-menu {
+	justify-content: space-between;
+}
+.nav-menu li {
+	padding: 40px 0px;
+	cursor: pointer;
+	text-align: center;
+}
+.nav-item {
+	position: relative;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	transition: 0.2s ease-in-out;
+	font-family: "MuseoModerno", cursive;
+}
+.nav-item:hover {
+	color: gold;
+}
+.nav-item:after {
+	position: absolute;
+	content: "";
+	bottom: -15px;
+	left: 0;
+	width: 0%;
+	height: 1px;
+	background-color: gold;
+	transition: 0.2s ease-in-out;
+}
+.nav-item:hover:after {
+	width: 100%;
+}
+.logo {
+	font-family: "MuseoModerno", cursive;
+	font-weight: 900;
+}
+
+.sidebar {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	overflow: hidden;
+	border-right: 1px solid rgba(128, 128, 128, 0.377);
+	position: relative;
+}
+.collection-title {
+	position: relative;
+}
+.collection-title::before {
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: 0;
+	width: 300px;
+	background-color: rgba(179, 179, 179, 0.562);
+	box-shadow: 4px 0 5px 0px rgba(179, 179, 179, 0.562);
+	height: 0.2px;
+}
+.collection h3 {
+	font-size: 20px;
+	font-family: "MuseoModerno", cursive;
+	padding: 15px 0;
+}
+.collection-title {
+	font-size: 18px;
+	margin: 10px 0;
+	font-family: "MuseoModerno", cursive;
+}
+.collection-title::after {
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: 0;
+	width: 200px;
+	background-color: gold;
+	height: 0.2px;
+	box-shadow: -4px 0 5px 0px gold;
+}
+.collection span {
+	color: rgba(179, 179, 179, 0.562);
+	font-size: 14px;
+	font-family: "MuseoModerno", cursive;
+}
+.page-title h1 {
+	font-size: 70px;
+	font-family: "MuseoModerno", cursive;
+	font-weight: 900;
+	line-height: 100%;
+}
+.page-title p {
+	color: rgba(179, 179, 179, 0.562);
+	font-size: 14px;
+	font-family: "MuseoModerno", cursive;
+}
+.page-title p span {
+	text-decoration: underline;
+}
+.menu-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	width: 100%;
+	color: gainsboro;
+}
+.devider {
+	flex: 1 auto;
+}
+.menu-bar:hover {
+	background-color: gray;
+	opacity: 0.7;
+	cursor: pointer;
+}
+ul.social-links {
+	display: flex;
+	width: 200px;
+	justify-content: space-between;
+	transform: rotate(-90deg);
+	position: absolute;
+	bottom: 61px;
+}
+ul.social-links li {
+	padding: 30px;
+	height: 100%;
+	cursor: pointer;
+	color: gainsboro;
+}
+ul.social-links li:hover {
+	background-color: gray;
+	opacity: 0.7;
+}
+section.main-part {
+	display: flex;
+	justify-content: space-between;
+}
+
+section.main-part div {
+	padding: 80px 0;
+	width: 50%;
+}
+section.footer-part {
+	align-self: center;
+
+	background-color: rgba(56, 56, 56, 0.822);
+}
+.footer-boxes {
+	display: grid;
+	grid-template-columns: 1fr 1fr 300px 1fr;
+	grid-template-rows: 200px;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 0 30px 0 0;
+}
+
+.box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.footer-title {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+.box p {
+	font-family: "MuseoModerno", cursive;
+}
+.footer-box-title {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.footer-desc {
+	color: rgba(179, 179, 179, 0.562);
+	line-height: 28px;
+	font-weight: bold;
+	font-family: "MuseoModerno", cursive;
+}
+.footer-box-p {
+	color: rgba(179, 179, 179, 0.562);
+
+	line-height: 28px;
+	font-family: "MuseoModerno", cursive;
+}
+.footer-dots {
+	margin-top: 20px;
+	width: 8px;
+	height: 8px;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0 0 2px 0 rgba(179, 179, 179, 1),
+		15px 0 2px 0 rgba(179, 179, 179, 1), 30px 0 2px 0 rgba(179, 179, 179, 1);
+}
+.footer-link {
+	letter-spacing: 2px;
+	margin-top: 8px;
+	font-family: "MuseoModerno", cursive;
+	font-size: 12px;
+	color: gold;
+	text-decoration: none;
+}
+.footer-titles {
+	display: flex;
+	justify-content: space-between;
+}
+.opacity-0 {
+	opacity: 0;
+	cursor: default;
+	visibility: hidden;
+}
+.footer-title {
+	margin-top: 20px;
+}
+
+@media (max-width: 1291px) {
+	.box p {
+		font-size: 90%;
+	}
+	.footer-box-p {
+		margin-bottom: 8px;
+		font-size: 12px !important;
+	}
+	.footer-link {
+		margin-top: 0;
+	}
+
+	.footer-title {
+		font-size: 90%;
+	}
+}
+@media (max-width: 1210px) {
+	.footer-boxes {
+		grid-template-columns: 1fr 1fr 250px 1fr;
+	}
+}
+@media (max-width: 1109px) {
+	.nav-menu li {
+		font-size: 95%;
+		text-align: center;
+	}
+}
+@media (max-width: 936px) {
+	.box p {
+		font-size: 80%;
+	}
+	.footer-box-p {
+		margin-bottom: 8px;
+		font-size: 12px !important;
+	}
+	.footer-link {
+		margin-top: 0;
+	}
+
+	.footer-title {
+		font-size: 80%;
+	}
+	.nav-menu li {
+		font-size: 90%;
+		text-align: center;
+	}
+	.footer-boxes {
+		grid-template-columns: 1fr 1fr 240px 1fr;
+	}
+	.body {
+		grid-template-columns: 70px 1fr;
+	}
+	.menu-bar {
+		padding: 30px;
+		width: 100%;
+		color: gainsboro;
+	}
+}
