@@ -314,4 +314,10 @@ section.footer-part {
 		width: 100%;
 		color: gainsboro;
 	}
+	.page-title h1 {
+		font-size: 60px !important;
+	}
+	.page-title p {
+		font-size: 90%;
+	}
 }
